@@ -15,8 +15,6 @@ namespace SuperHeroApi.Controllers
             _superHero = superHero;
         }
 
-        // falta implementar o metodo get
-
         [HttpGet("{token}/{id}")]
 
         public async Task<ActionResult> GetSuperHero([FromRoute] string id, [FromRoute] string token)
